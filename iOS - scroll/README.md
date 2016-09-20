@@ -6,11 +6,14 @@ include in `.html
 <script type="text/javascript" src="js/iOS-scroll.js"></script>
 
 <script>
-	iOSscroll(scrollElement, stopScroll);
+	iOSscroll(stopScroll, scrollElement);
 </script>
 
-	scrollElement - CSS selector on modal scroll block
 	stopScroll - CSS selector on don`t scroll block
+	scrollElement - CSS selector on modal scroll block
+
+If iOSscroll(stopScroll) - scroll stop for element stopScroll and it child
+If iOSscroll() - stop scroll on 'body' and all elements
 
 Example:
 
